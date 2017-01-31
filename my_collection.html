@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Click the image so that you get name into text box for adding into collection.</p>
+<form  name ="submit_bookmark" action = "http://127.0.0.1:8081/MYCOLLECTION_ADDING" method = "GET">
+ First Name: <input type = "text" name = "first_name">  
+         Password  :  <input type = "text" name = "last_name"><br>
+<input  type = "text" value = "click on picture" name = "movie_name">        
+         <input type = "submit" value = "Submit">
+</form>
+ <img id="myBtn" alt = "bttf1" onclick="myFunction()" src="bttf1.png"/><img id="myBtn2" alt = "bttf2" onclick="myFunction2()" src="bttf2.png"/><br>
+ <img id="myBtn3" alt = "bttf3" onclick="myFunction3()" src="bttf3.png"/><img id="myBtn4" alt = "bttf4" onclick="myFunction4()" src="bttf4.png"/>
+
+
+<script>
+function myFunction() {
+var x = document.getElementById("myBtn").alt;
+var oForm = document.forms["submit_bookmark"];
+var oTagsList = oForm.elements["movie_name"];
+ oTagsList.value=x;
+    
+}
+function myFunction2() {
+var x = document.getElementById("myBtn2").alt;
+var oForm = document.forms["submit_bookmark"];
+var oTagsList = oForm.elements["movie_name"];
+ oTagsList.value=x;
+    
+}
+function myFunction3() {
+var x = document.getElementById("myBtn3").alt;
+var oForm = document.forms["submit_bookmark"];
+var oTagsList = oForm.elements["movie_name"];
+ oTagsList.value=x;
+    
+}
+function myFunction4() {
+var x = document.getElementById("myBtn4").alt;
+var oForm = document.forms["submit_bookmark"];
+var oTagsList = oForm.elements["movie_name"];
+ oTagsList.value=x;
+    
+}
+</script>
+
+</body>
+</html>

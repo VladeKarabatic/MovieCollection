@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Click the image so that you get name into text box for adding into collection.</p>
+<form  name ="submit_bookmark" action = "http://127.0.0.1:8081/MYCOLLECTION_ADDING" method = "GET">
+ First Name: <input type = "text" name = "first_name">  
+         Password  :  <input type = "text" name = "last_name"><br>
+<input  type = "text" value = "Submit" name = "movie_name">        
+         <input type = "submit" value = "Submit">
+</form>
+ <img id="myBtn" alt = "desert" onclick="myFunction()" src="1.png"/>
+
+
+<script>
+function myFunction() {
+var x = document.getElementById("myBtn").alt;
+var oForm = document.forms["submit_bookmark"];
+var oTagsList = oForm.elements["movie_name"];
+ oTagsList.value=x;
+    
+    
+}
+</script>
+
+</body>
+</html>
